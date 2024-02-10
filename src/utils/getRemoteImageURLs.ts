@@ -1,9 +1,9 @@
-import path from "path";
-import fs, { readdir as readDir } from "fs";
-import { promisify } from 'util';
+var path = require("path");
+var fs = require("fs");
+var promisify = require('util');
 
 const directoryPath = path.join(__dirname, '../../../../temp_img');
-const readdir = promisify(readDir)
+const readdir = promisify(fs.readdir)
 
 const urlToFilename = require("./urlToFilename");
 
