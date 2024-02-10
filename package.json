@@ -1,10 +1,9 @@
 {
   "name": "@exdst/next-image-export-optimizer",
-  "version": "1.12.6",
+  "version": "1.12.7",
   "description": "Optimizes all static images for Next.js static HTML export functionality",
   "main": "dist/ExportedImage.js",
   "types": "dist/ExportedImage.d.ts",
-  "type": "module",
   "bin": "dist/optimizeImages.js",
   "engines": {
     "node": ">=16.0.0"
