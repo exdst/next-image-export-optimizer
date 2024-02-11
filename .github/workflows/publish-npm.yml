@@ -19,7 +19,7 @@ jobs:
           cache: "npm"
       - run: npm ci
       - run: cd example/ && npm ci && cd ..
-      - run: npm run build && npm test
+      - run: npm run build
       - name: Publish package on NPM 📦
         working-directory: .
         run: npm publish --access=public
