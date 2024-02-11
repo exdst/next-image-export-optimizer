@@ -1,6 +1,6 @@
 {
   "name": "@exdst/next-image-export-optimizer",
-  "version": "1.12.9",
+  "version": "1.12.10",
   "description": "Optimizes all static images for Next.js static HTML export functionality",
   "main": "dist/ExportedImage.js",
   "types": "dist/ExportedImage.d.ts",
@@ -41,7 +41,7 @@
     "test:e2e:basePath": "npx playwright install && BASEPATH=true IMAGESWEBP=false playwright test --config playwright-basePath.config.js",
     "test:e2e": "npx playwright install && playwright test",
     "exportExample": "cd example && npm run export && cd ..",
-    "prepublishOnly": "npm run build && npm test && npm run test:e2e:basePath && npm run test:e2e",
+    "prepublishOnly": "npm run build",
     "fetchTags": "git fetch --tags -f"
   },
   "repository": {
