@@ -41,7 +41,7 @@
     "test:e2e:basePath": "npx playwright install && BASEPATH=true IMAGESWEBP=false playwright test --config playwright-basePath.config.js",
     "test:e2e": "npx playwright install && playwright test",
     "exportExample": "cd example && npm run export && cd ..",
-    "prepublishOnly": "npm run build",
+    "prepublishOnly": "npm run build && npm test && npm run test:e2e:basePath && npm run test:e2e",
     "fetchTags": "git fetch --tags -f"
   },
   "repository": {
